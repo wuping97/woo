@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	height: 900px;
+	background:url(../images3/bn.jpg) no-repeat;
+	background-size: 100% 100%;
+	
+}
+#wrap{
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+#header{
+	width: 100%;
+	height: 20%;
+	line-height: 50px;
+	background:#ccdaea;
+	background-size: 100% 100%;
+}
+#header_left{
+	width:30%;
+	height: 100%;
+	background: url(../images3/beibuwan.jpg) no-repeat;
+	background-size: 100% 100%;
+	/*display: inline-block;*/
+	float: left;
+
+}
+
+#header_mid{
+	width:50%;
+	height: 100%;
+	font-family: serif;
+	font-size: 50px;
+	text-align: center;
+	line-height: 400%;
+	float: left;
+	color:rgb(103, 105, 102);
+	
+}
+
+.header_span{
+	transition: font-size 0.5s,background 0.5s;
+}
+
+.header_span:hover{
+	font-size: 70px;
+	color: rgb(87, 126, 67); 
+}
+#header_right{
+	margin-top: 10px;
+	margin-right: 20px; 
+	width:13%;
+	height: 90%;
+	background: url(../images3/wo.jpg) no-repeat;
+	background-size: cover;
+    border-radius: 50%;
+    animation: col 10s linear 0s infinite;
+	float: right;
+	
+}
+
+#header_right:hover{
+	animation-play-state: paused;
+}
+
+@keyframes col {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+#nav{
+	margin-top: 0;
+	height: 35px;
+	background: #c0ccd7;
+	line-height: 32px;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+#nav_li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 70px;
+}
+
+
+#menu_left{
+	background-color: #c7d4e4;
+	width: 13%;
+	height: 48%;
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 45px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#menu_li{
+	list-style: none;
+	margin-top: 8px;
+}
+#main{
+	margin-left: 10px;
+	width: 85%;
+	height: 44%;
+	margin-top: 30px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.main_ul{
+	width: 100%;
+
+}
+
+.main_li{
+	text-indent: 32px;
+	list-style: none;
+	line-height: 200%;
+	color: #0e0d0d;
+}
+
+#text1{
+	font-size: 30px;
+}
+
+
+
+a{
+	text-decoration: none;
+	font-size: 25px;
+	color: rgba(133, 35, 35, 0.96);
+}
+a:hover{
+		text-decoration: underline;
+		/*background-color: #9e9e9e6b;*/
+		color: #ff5722;
+		font-size: 32px; 
+}
+
+#footer{
+	height: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #c0ccd7;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 600px;
+    background: #c97f4d;
+}
+
+
+#left{
+    background: url('../images3/23.jpg') no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
+    margin-left:50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 580px;
+    display: inline-block;
+}
+
+
+#right{
+
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    text-align: center;
+    position: absolute;
+}
+
+#click{
+    margin: 50px 10px 10px 10px;
+    font-size: 26px;
+}
+
+#click span{
+    color: black;
+}
+
+form li{
+    list-style: none;
+    line-height: 50px;
+}
+
+#left_signup{
+    /*width: 72px;*/
+    float: left;
+    text-align: right;
+}
+
+#right_signup{
+    /*float: left;*/
+
+    text-align: left;
+}
+
+#right_signup ul li input{
+    background: #d7cbcb;
+    border: 1px solid #703779;
+}
+
+#left_signup,#right_signup{
+    display: inline-block;
+
+}
+
+#signup{
+    text-decoration: none;
+    color: #ab2323;
+    transition: font-size 0.2s;
+}
+
+#login:hover,#signup:hover{
+    color: #daeae3;
+    font-size: 35px;
+}
+
+
+#login{
+    text-decoration: none;
+    color: #2d2416;
+    transition: font-size 0.2s;
+
+}
+
+#btn a{
+    text-decoration: none;
+    color: #daeae3;
+}
+
+#reset,#submit{
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #ffc10794;
+    border-radius: 45px;
+    color: #daeae3;
+    padding: 6px 14px;
+}

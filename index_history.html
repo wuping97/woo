@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>北海历史</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/index_history.js"></script>
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	 	.container {
+            width:100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .left {
+            width:48%;
+            height: 100%;
+            background: url('images3/feng.jpg') no-repeat;
+            background-size: 100% 100%;
+            float:left;
+            position: fixed;
+            display: inline-block;
+        }
+
+
+        .container .header {
+          display: inline-block;
+          margin: 25px 25px;
+          text-align: center;
+        }
+
+
+        .nav{
+          display: inline-block;
+          margin-left: 10px;
+          margin-top: 0;
+          float: right;
+
+        }
+        
+        .header .logo{
+          display: inline-block;
+          height: 48px;
+          line-height: 48px;
+        }
+
+        .header  a{
+          text-align: center;
+          height: 48px;
+          line-height: 48px;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          color: #38492c;
+          margin-left: 10px;
+          transition: all .2s;
+
+        }
+
+        .header a:hover{
+          color: #1A237E;
+          font-size: 22px;
+        }
+
+
+        .logo img{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+
+        .left h1{
+          margin-top: 20px;
+          color: #DCEDC8;
+          font-family: serif;
+          text-align: center;
+          letter-spacing: 30px;
+          transition: all 0.3s;
+
+        }
+
+        .left h1:hover{
+          font-size: 60px;
+          color: #43A047;
+        }
+
+        .right{
+          width: 52%;
+          height: 2930px;
+          float: right;
+          background: #abcdef;
+
+        }
+
+        .rightp1{
+          width: 140px;
+      	  color: #4b5f69;
+          margin: 20px 10px;
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center;
+          background: #1976d21c;
+          border-radius: 10px;
+        }
+        .rightp2{
+          color: white;
+          margin: 10px 10px;
+          text-indent: 32px;
+          line-height: 30px;
+          background: #1976d21c;
+          border-radius: 10px;
+        }
+
+        .first{
+        	width: 100%;
+        }
+
+        .first_p{
+          color: white;
+          margin: 10px 20px;
+          text-indent: 32px;
+          line-height: 30px;
+          background: #1976d21c;
+          border-radius: 10px;
+        }
+
+        .img1{
+        	float: right;
+        	border:1px black;
+			margin:0px 0px 10px 20px;
+
+        }
+
+        .img2{
+        	width: 300px;
+        	height: 200px;
+        	float: right;
+        	margin:0px 0px 10px 20px;
+
+        }
+
+        .first_p strong{
+        	color: #3F51B5;
+        }
+
+        .lb_gl{
+        	width: 100%;
+			height: 1000px;
+		}
+
+		.container{
+			width: 100%;
+			position: relative;
+			height: 100%;
+		}
+		.pictureSlider{
+			text-align: center;
+			height: 100%;
+			transform: rotate(90deg)  translateY(25%) translateX(-25%);
+		}
+
+		.rightp3{
+			width: 140px;
+		    color: #4b5f69;
+		    margin: 10px 10px 0 10px;
+		    font-size: 24px;
+		    line-height: 30px;
+		    background: #1976d21c;
+		    border-radius: 10px;
+		    text-align: center;
+		}
+
+		.poster-list{
+			width: 100%;
+			height: 100%;
+		}
+		.poster-item{
+			background: white;
+			border-color: black;
+			height: 40%;
+			width:80%;
+			border-radius: 10px;
+			padding:45px 23px 10px 23px;
+			transition: all 0.5s;
+			cursor: default;
+			-moz-transition: all 0.5s;
+			cursor: default;
+			-webkit-transition: all 0.5s;
+			cursor: default;
+			-o-transition: all 0.5s;
+			cursor: default;
+			transform: rotate(-90deg);
+			overflow: hidden;
+		}
+		.turn_3d{
+			text-align: center;
+			color: #fff;
+			font-weight: 400;
+			font-size: 36px;
+			padding: 28px 0;
+		}
+		.xxgy{
+			font-size: 30px;
+			font-weight: 900;
+			
+		}
+
+		.for_btn{
+			position: relative;
+			height:300px;
+			overflow:hidden
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<div class="header">
+				<div class="logo">
+					<img src="images3/lab.jpg">
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="index_food.html">美食</a>
+					<a href="index_scenery.html">风景</a>
+					<a href="index_custom.html">风俗</a>
+					<a href="index_climate.html">气候</a>
+					<a href="index_signup.html">注册</a>
+					<a href="index_login.html">登录</a>
+				</div>
+			</div>
+			<h1>走进历史</h1>
+			<h1>感受魅力北海</h1>
+			<!-- <h1>熟悉</h1> -->
+		</div>
+		<div class="right">
+			<p class="rightp1">名称的由来:</p>
+			
+			
+			<p class="rightp2">广西北海市的“北海”一名来自其海城区地角镇的同名渔村“北海村”，由于此地最早开发人群都是疍家渔民，他们长年集中居住在靠近避风港的村落，该避风港面向北面海域（北海市是个半岛），所以此村得名“北海村”。
+			<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;“朝沧梧而夕北海”，北海的名字很早就有了，北海地名的形成，定位于康熙元年（1662年），清政府设“北海镇标”作为“北海”地名的称谓。由于此种说法转述频繁、引证广泛，因此成为一个定例。据文史资料记载，“北海”一词可追溯至宋朝甚至是魏晋南北朝时期，这个时期，“北海”更多的是被外国人所称呼。1965年6月，北海由广东省划归广西壮族自治区，北海之名也一直沿用至今。</p>
+
+            <p class="rightp1">建制沿革：</p>
+            <div class="first">
+            	<p class="first_p">
+            		<img src="images3/lishi2.jpg" width="300px" height="200px;" class="img1">
+            		<strong>在新石器时代</strong>北海已有人类活动，北海市属北海县地，古称“百越”。
+            		<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>商代</strong>，合浦所属的百姓就“请以珠巩”进贡商王。
+				春秋战国时期，岭南称百越之地，北海属百越的一部分。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>秦始皇三十三年（前214年）</strong>，秦王朝征服百越，在岭南设置桂林郡、南海郡和象郡，北海属象郡。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>汉代</strong>，北海就是桂东南、粤西的政治、文化、经济中心。这里便是中国“海上丝绸之路”的始发港之一。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>东汉建安八年（203年）</strong>合浦郡统合浦、徐闻、高凉、凌允、珠崖五县，北海属珠崖。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>三国时</strong>，孙吴黄武七年（228年）改合浦郡为珠官郡，太元二年（252年）恢复合浦郡。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>两晋年间</strong>，合浦都是郡治所在地。东晋咸和五年（330年）印度佛教徒智弘，无行从海路入合浦传教。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>南北朝建元元年（479年）</strong>合浦郡地另设11个郡地，设盐田郡于北海地，杜周一县。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>隋大业三年（607年）</strong>改为禄洲。
+				<br>
+				<img src="images3/lishi3.jpg" class="img2">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>唐武德五年（622年）</strong>合浦郡改称越州。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>唐贞观六年（632年）</strong>添置珠池县，唐贞观八年（634年）越州改称：廉州，因历代出廉官而得名，贞观十二年（638年）废安昌，珠池两县入合浦。唐天宝元年（742年），廉州改称合浦郡。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>五代南汉乾亨元年（917年）</strong>复称廉州，统合浦，封山，蔡龙，大廉四县。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>南汉大宝五年（962年）</strong>改为媚州都。宋太平兴国八年（983年）废廉州移至海门三十里（北海地）建太平军廉州古城始建。北海自南北朝（479年）设盐田郡起，至北宋靖康二年（1127年）先后在北海设过盐田郡，海门镇，陆州，珠池县，东罗县等政区。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>元至元三十年（1293年）</strong>在廉州设提举市舶司，专事海运与外国船只并收“船头规”时为全国六大市舶司之郡，逮扬州，统11个县。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>明洪武元年（1368年）</strong>设两广总督后改名为廉州府，统合浦，石康，灵山，廉州。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>清康熙元年（1662年）</strong>设北海镇标（军事建）。
+				<img src="images3/laojie.jpeg" class="img2">
+				<br>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>乾隆年间</strong>，北海市开始形成。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>咸丰五年（1855年）</strong>珠场巡检司移驻北海，标志北部湾中心从廉州（合浦）移至北海，北海港口商业城市开始形成。光绪六年（1876年）中英签订《烟台条约》北海与宜昌、芜湖、温州、一并辟为通商口岸。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1949年12月4日</strong>解放，当时为镇，归合浦县管辖（属广东南路专区）。1951年1月前为广东省辖市，同年5月委托广西省领导。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1952年3月</strong>，正式划归广西。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1955年5月</strong>，重归广东。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1956年</strong>，降为县级市。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1958年</strong>，降为合浦县北海人民公社（属湛江专区）。
+				1959年，改为县
+				级镇。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1964年</strong>，恢复为县。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1965年6月</strong>，又划归广西。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1983年10月</strong>，提升为地级市。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1987年7月1日</strong>，合浦县划归北海市管辖。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<strong>1995年2月</strong>，撤销郊区，设立银海区；增设铁山港区，以合浦县属的南康、营盘2个镇归辖，增设兴港镇。
+				</p>
+
+            </div>
+
+	<!--轮播-->
+	
+				<div class="lb_gl">
+					<div class="container">
+						<p class="rightp3">历史图册：</p>
+						<div class="pictureSlider poster-main">
+							<ul id="zturn" class="poster-list">
+								<li class="poster-item  zturn-item">
+									<p class="xxgy">北海老街</p>
+									<div class="for_btn">
+										<img src="images3/lishi1.jpg" width="100%" height="300px">
+									</div>
+
+									
+								</li>
+
+								<li class="poster-item zturn-item">
+									<p class="xxgy">北海近代邮电历史陈列馆</p>
+									<div class="for_btn">
+										<img src="images3/lishi3.jfif" width="100%" height="300px">
+									</div>
+									
+								</li>
+
+								<li class="poster-item zturn-item">
+									<p class="xxgy">北海老街</p>
+									<div class="for_btn">
+										<img src="images3/laojie3.jpg" width="100%" height="300px">
+									</div>
+									
+								</li>
+
+								<li class="poster-item zturn-item">
+									<p class="xxgy">沿海之城</p>
+									<div class="for_btn">
+										<img src="images3/lishi4.jfif" width="100%" height="300px">
+									</div>
+									
+								</li>
+
+								<li class="poster-item zturn-item">
+									<p class="xxgy">百年老街</p>
+									<div class="for_btn">
+										<img src="images3/lishi5.jpg" width="100%" height="300px">
+									</div>
+									
+								</li>
+								<li class="poster-item  zturn-item">
+									<p class="xxgy">辛勤劳作</p>
+									<div class="for_btn">
+										<img src="images3/lishi6.jpg" width="100%" height="300px">
+									</div>
+									
+								</li>
+
+								<li class="poster-item zturn-item">
+									<p class="xxgy">北海港务局码头作业区</p>
+									<div class="for_btn">
+										<img src="images3/lishi8.jpeg" width="100%" height="300px">
+									</div>	
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var aa = new zturn({
+			id: "zturn",
+			opacity: 0.9,
+			width: 200,
+			Awidth: 300,
+			scale: 0.9,
+			auto: true,//是否轮播 默认5000
+			turning: 2000//轮播时长
+		})
+
+	</script>
+</body>
+</html>

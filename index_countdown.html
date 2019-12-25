@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>倒计时</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index_countdown.css">
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/index_countdown.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="return">
+			<a href="index.html" class="return_a">
+				<div class="return_img">
+				</div>
+				<span>返回首页</span>
+			</a>
+		</div>
+		<div class="title">
+			<h1 class="title_h1">倒</h1>
+			<h1 class="title_h1">计</h1>
+			<h1 class="title_h1">时</h1>
+			<h1 class="title_h1">啦</h1>
+			<h1 class="title_h1">！</h1>
+		</div>
+		<div class="main">
+			<label>请输入你想去到的时间:</label>
+			<input type="text" name="year" value="" id="year" class="t_input">
+			<label>年</label>
+			<input type="text" name="mon" value="" id="mon" class="t_input">
+			<label>月</label>
+			<input type="text" name="day" value="" id="day" class="t_input">
+			<label>日</label>
+		</div>
+		<div id="start">
+			<img src="images3/11.png" class="start_img">
+			
+		</div>
+		<div id="target_time">
+			<label>现在距离 -</label>
+			<label id="tYear">2020</label>
+			<label>年</label>
+			<label id="tMon">1</label>
+			<label>月</label>
+			<label id="tDay">25</label>
+			<label>日 - 还剩：</label>	
+		</div>
+		<!-- time -->
+		<div id="time" class="align">
+			<label id="nDay">000</label>
+			<label class="num">天</label>
+			<label id="nHour">00</label>
+			<label class="num">小时</label>
+			<label id="nMin">00</label>
+			<label class="num">分</label>
+			<label id="nSec">00</label>
+			<label class="num">秒</label>
+		</div>
+	</div>
+</body>
+</html>

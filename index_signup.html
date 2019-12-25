@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/index_signup.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/index_signup.js"></script>
+</head>
+</head>
+<body>
+    <div class="container">
+      <div id="left">
+      </div>
+      <div id="right">
+          <div id="click">
+          <span><a href="index_signup.html" id="signup"><strong>注册</strong></a></span><span>/</span><span><a href="index_login.html" id="login">登录</a></span>
+          </div>
+        <form>
+          <div id="left_signup">
+            <ul>
+            <li><label>用户名:</label></li>
+            <li><label>电子邮箱:</label></li>
+            <li><label>密码:</label></li>
+            <li><label>重复密码:</label></li>
+            <li><label>身份证号码:</label></li>
+            <li><label>联系电话:</label></li>
+            </ul>
+          </div>
+          <div id="right_signup">
+            <ul>
+            <li>
+              <input type="text" name="username" value="" id="username">
+              <label id="username1">*以英文开头，4-16个英文、数字或下划线字符！</label>
+            </li>
+            <li>
+              <input type="text" name="e-mail" value="" id="e-mail">
+              <label id="e-mail1">*</label>
+            </li>
+            <li>
+              <input type="password" name="psd" value="" id="psd">
+              <label id="psd1">*英文字母、数字、下划线，且长度在6-24个字符</label>
+            </li>
+            <li>
+              <input type="password" name="psdagin" value="" id="psdagin">
+              <label id="psdagin1">*</label>
+            </li>
+            <li>
+              <input type="text" name="idnum" value="" id="idnum">
+              <label id="idnum1">*</label>
+            </li>
+            <li>
+              <input type="text" name="phonenum" id="phonenum">
+              <label id="phonenum1">*</label>
+            </li>
+          </ul>
+          </div>
+          <br>
+          <br>
+          
+          <div align="center" id="btn">
+            <input type="submit" name="submitDate" value="提交" id="submit" >&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="reset" value="重置" id="reset">&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html">返回首页</a>
+          </div>
+        </form>
+            
+      </div>          
+    </div>
+</body>
+</html>
